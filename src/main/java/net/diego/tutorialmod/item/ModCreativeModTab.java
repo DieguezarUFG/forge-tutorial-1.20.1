@@ -1,6 +1,7 @@
 package net.diego.tutorialmod.item;
 
 import net.diego.tutorialmod.TutorialMod;
+import net.diego.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,10 @@ public class ModCreativeModTab {
                         pOutput.accept(ModItems.SAFIRO.get());
                         pOutput.accept(ModItems.RAW_SAFIRO.get());
                         pOutput.accept(ModItems.POKEBOLA.get());
+
+
+                        pOutput.accept(ModBlocks.BLOQUE_SAFIRO.get());
+                        pOutput.accept(ModBlocks.RAW_BLOQUE_SAFIRO.get());
 
                     })
                     .build());
