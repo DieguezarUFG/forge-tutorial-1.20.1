@@ -24,8 +24,8 @@ public class ModCreativeModTab {
                         pOutput.accept(ModItems.POKEBOLA.get());
 
 
-                        pOutput.accept(ModBlocks.BLOQUE_SAFIRO.get());
-                        pOutput.accept(ModBlocks.RAW_BLOQUE_SAFIRO.get());
+                        pOutput.accept(ModBlocks.SAFIRO_BLOQUE.get());
+                        pOutput.accept(ModBlocks.RAW_SAFIRO_BLOQUE.get());
 
                     })
                     .build());

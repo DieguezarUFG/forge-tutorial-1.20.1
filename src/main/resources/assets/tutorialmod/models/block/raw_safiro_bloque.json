@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tutorialmod:block/raw_bloque_safiro"
+    "all": "tutorialmod:block/raw_safiro_bloque"
   }
 }

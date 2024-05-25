@@ -20,10 +20,10 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
 
-    public static final RegistryObject<Block> BLOQUE_SAFIRO = registerBlock("bloque_safiro",
+    public static final RegistryObject<Block> SAFIRO_BLOQUE = registerBlock("safiro_bloque.json",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
-    public static final RegistryObject<Block> RAW_BLOQUE_SAFIRO = registerBlock("raw_bloque_safiro",
+    public static final RegistryObject<Block> RAW_SAFIRO_BLOQUE = registerBlock("raw_safiro_bloque",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
 

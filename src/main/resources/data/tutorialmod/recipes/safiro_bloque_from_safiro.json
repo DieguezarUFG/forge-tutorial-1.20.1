@@ -1,0 +1,19 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:safiro"
+    }
+  },
+
+  "result": {
+    "item": "tutorialmod:safiro_bloque",
+    "count": 1
+  }
+}
