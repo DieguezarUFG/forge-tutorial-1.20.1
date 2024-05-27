@@ -4,7 +4,12 @@
   "item.tutorialmod.pokebola": "Pokebola",
 
   "block.tutorialmod.safiro_bloque": "Bloque de Safiro",
-  "block.tutorialmod.raw_safiro_bloque": "Bloque de Mena de Safiro",
+  "block.tutorialmod.raw_safiro_bloque": "Mena de Safiro",
+  "block.tutorialmod.safiro_ore": "Mena de safiro",
+  "block.tutorialmod.deepslate_safiro_ore": "Mena de safiro de Pizarra Profunda",
+  "block.tutorialmod.nether_safiro_ore": "Mena de safiro del Nether",
+  "block.tutorialmod.end_stone_safiro_ore": "Mena de safiro del End",
+
 
   "creativetab.tutorial_tab": "Safiros Tutorial Tab"
 }

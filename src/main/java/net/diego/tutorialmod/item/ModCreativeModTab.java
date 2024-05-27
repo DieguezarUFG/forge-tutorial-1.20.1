@@ -27,6 +27,11 @@ public class ModCreativeModTab {
                         pOutput.accept(ModBlocks.SAFIRO_BLOQUE.get());
                         pOutput.accept(ModBlocks.RAW_SAFIRO_BLOQUE.get());
 
+                        pOutput.accept(ModBlocks.SAFIRO_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_SAFIRO_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_SAFIRO_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SAFIRO_ORE.get());
+
                     })
                     .build());
 

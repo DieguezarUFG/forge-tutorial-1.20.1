@@ -2,10 +2,13 @@ package net.diego.tutorialmod.block;
 
 import net.diego.tutorialmod.TutorialMod;
 import net.diego.tutorialmod.item.ModItems;
+
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,11 +23,25 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
 
-    public static final RegistryObject<Block> SAFIRO_BLOQUE = registerBlock("safiro_bloque.json",
+    public static final RegistryObject<Block> SAFIRO_BLOQUE = registerBlock("safiro_bloque",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-
     public static final RegistryObject<Block> RAW_SAFIRO_BLOQUE = registerBlock("raw_safiro_bloque",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+
+    public static final RegistryObject<Block> SAFIRO_ORE = registerBlock("safiro_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+    public static final RegistryObject<Block> DEEPSLATE_SAFIRO_ORE = registerBlock("deepslate_safiro_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> NETHER_SAFIRO_ORE = registerBlock("nether_safiro_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(1f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> END_STONE_SAFIRO_ORE = registerBlock("end_stone_safiro_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
+
 
 
     private static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier <T> block) {
